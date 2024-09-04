@@ -571,7 +571,6 @@ public class Main {
                             System.out.println("-------------------------------------------------------------------------");
 
 
-
                             Scanner scanner = new Scanner(System.in);
 
                             System.out.print("Ingrese el primer valor: ");
@@ -596,7 +595,7 @@ public class Main {
                             return;
                     }
                     break;
-                    case 8:
+                case 8:
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                                 BUCLE DO WHILE                              -");
                     System.out.println("-------------------------------------------------------------------------------");
@@ -706,9 +705,59 @@ public class Main {
                         default:
                             System.out.println("Opcion no valida, inicie nuevamente");
                             return;
-
                     }
                     break;
+                case 10:
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-                               BUCLE FOR                                     -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-                                1. Teoria                                    -");
+                    System.out.println("-                                2. Practica                                  -");
+                    System.out.println("-                               12. Salir                                     -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("Ingrese una sub opcion");
+
+                    while (!menuscanner.hasNextInt()) {
+                        System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                        menuscanner.next();
+                        System.out.println("Ingrese una sub opcion");
+                    }
+                    subMenu = menuscanner.nextInt();
+                    switch (subMenu) {
+                        case 1:
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                       TEORIA FOR                                                          -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                                                                                           -");
+                            System.out.println("- Es una estructura de control de flujo que se utiliza para repetir un bloque de código un número específico de veces.      -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            break;
+
+                        case 2:
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-                               PRACTICA FOR                            -");
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-      Realizar la suma de los numero del 1 al 10.                      -");
+                            System.out.println("-------------------------------------------------------------------------");
+
+
+                            int suma = 0;
+
+                            for (int i = 1; i <= 10; i++) {
+                                suma += i;
+
+                                System.out.println("La sumatoria de los numeros enteros entre 1 y 10 es " + suma);
+                            }
+                            break;
+
+                        case 12:
+                            System.out.println("Saliendo...");
+                            System.exit(0);
+                            break;
+                        default:
+                            System.out.println("Opcion no valida, inicie nuevamente");
+                            return;
+                    }
 
             }
 
