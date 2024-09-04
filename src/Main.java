@@ -547,7 +547,7 @@ public class Main {
                     System.out.println("Ingrese una sub opcion");
 
                     while (!menuscanner.hasNextInt()) {
-                        System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                        System.out.println("La opcion ingresada no existe, intentalo nuevamente");
                         menuscanner.next();
                         System.out.print("Digite su opción: ");
                     }
@@ -596,23 +596,118 @@ public class Main {
                             return;
                     }
                     break;
-                case 8:
+                    case 8:
                     System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-                               BUCLE DO WHILE                                -");
+                    System.out.println("-                                 BUCLE DO WHILE                              -");
                     System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-                          1. Teoria                                    -");
+                    System.out.println("-                          2. Practica                                  -");
+                    System.out.println("-                          12. Salir                                    -");
+                    System.out.println("-------------------------------------------------------------------------");
+                    System.out.println("Ingrese una sub opcion");
+
+                    while (!menuscanner.hasNextInt()) {
+                        System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                        menuscanner.next();
+                        System.out.println("Ingrese una sub opcion");
+                    }
+                    subMenu = menuscanner.nextInt();
+                    switch (subMenu) {
+                        case 1:
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                       TEORIA DO WHILE                                                     -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                                                                                           -");
+                            System.out.println("- Es una estructura de control en programación que permite ejecutar un bloque de código al menos una vez y luego repetirlo  -");
+                            System.out.println("- mientras se cumpla una condición específica.                                                                              -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            break;
+
+                        case 2:
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-                               PRACTICA DO WHILE                       -");
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-      Realizar la suma de los numero del 1 al 10.                      -");
+                            System.out.println("-------------------------------------------------------------------------");
+
+
+                            int suma = 0;
+                            int i = 1;
+
+                            do {
+                                System.out.println("La suma en esta iteracion es: " + suma);
+                                suma += i;
+
+                                i++;
+
+                            } while (i <= 10);
+
+
+                            System.out.println("La suma total es: " + suma);
+                            break;
+
+                        case 12:
+                            System.out.println("Saliendo...");
+                            System.exit(0);
+                            break;
+                        default:
+                            System.out.println("Opcion no valida, inicie nuevamente");
+                            return;
+                    }
                     break;
                 case 9:
                     System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-                                 BUCLE WHILE                                 -");
+                    System.out.println("-                               BUCLE WHILE                                   -");
                     System.out.println("-------------------------------------------------------------------------------");
-                    break;
-                case 10:
+                    System.out.println("-                                1. Teoria                                    -");
+                    System.out.println("-                                2. Practica                                  -");
+                    System.out.println("-                                12. Salir                                    -");
                     System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-                                 BUCLE WHILE                                 -");
-                    System.out.println("-------------------------------------------------------------------------------");
-                    break;
-                default:
-                    System.out.println("Número no válido, por favor verifique.");
+                    System.out.println("Ingrese una sub opcion");
+
+                    while (!menuscanner.hasNextInt()) {
+                        System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                        menuscanner.next();
+                        System.out.println("Ingrese una sub opcion");
+                    }
+                    subMenu = menuscanner.nextInt();
+                    switch (subMenu) {
+                        case 1:
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                       TEORIA WHILE                                                        -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                                                                                           -");
+                            System.out.println("- Es una estructura de control que permite repetir un bloque de código mientras se cumpla una condición específica.         -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            break;
+
+                        case 2:
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-                               PRACTICA WHILE                          -");
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-      Realizar la suma de los numero del 1 al 10.                      -");
+                            System.out.println("-------------------------------------------------------------------------");
+
+                            int suma = 0;
+                            int i = 1;
+
+                            while (i <= 10) {
+                                suma += i;
+
+                                i++;
+                            }
+                            System.out.println("La suma es: " + suma);
+                            break;
+
+                        case 12:
+                            System.out.println("Saliendo...");
+                            System.exit(0);
+                            break;
+                        default:
+                            System.out.println("Opcion no valida, inicie nuevamente");
+                            return;
+
+                    }
                     break;
 
             }
