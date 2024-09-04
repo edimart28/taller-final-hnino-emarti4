@@ -7,6 +7,7 @@ public class Main {
 
         int menu;
         int subMenu;
+        int menuop;
         int menuif;
         int menusw;
 
@@ -188,10 +189,29 @@ public class Main {
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                                   STRING                                    -");
                     System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-  El tipo de dato String representa cadenas de texto, que pueden ser         -");
+                    System.out.println("-  escritas utilizando comillas simples, dobles o acentos graves (backticks). -");
+                    System.out.println("-  Los acentos graves permiten crear plantillas literales (template literals) -");
+                    System.out.println("-  que incluyen interpolación de variables y expresiones.                     -");
+                    System.out.println("-                                                                             -");
+                    System.out.println("-  Ejemplo                                                                    -");
+                    System.out.println("-          comillasSimples = 'Hola, mundo!';                                  -");
+                    System.out.println("-          plantillaLiteral = `Mi número favorito es ${entero}`;              -");
+                    System.out.println("-          caracteresEscape = 'Texto con \"comillas\" y salto de línea';      -");
+                    System.out.println("-------------------------------------------------------------------------------");
                     break;
                 case 3:
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                                 CONSTANTES                                  -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-  Es un tipo especial de variable cuyo valor no puede ser modificado una     -");
+                    System.out.println("-  vez que ha sido asignado. A diferencia de las variables regulares, que se  -");
+                    System.out.println("-  pueden actualizar a lo largo de la ejecución de un programa, las           -");
+                    System.out.println("-  constantes mantienen su valor original durante toda su vida útil.          -");
+                    System.out.println("-                                                                             -");
+                    System.out.println("-  Ejemplo                                                                    -");
+                    System.out.println("-               const nombreConstante = valorInicial;                         -");
+                    System.out.println("-                         const PI = 3.14159;                                 -");
                     System.out.println("-------------------------------------------------------------------------------");
                     break;
 
@@ -199,6 +219,123 @@ public class Main {
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                                OPERADORES                                   -");
                     System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-  Un operador representa un símbolo que permite realizar operaciones         -");
+                    System.out.println("-  aritméticas, relacionar elementos o hacer preguntas donde se involucra     -");
+                    System.out.println("-  más de una condición.                                                      -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-                            TIPO  DE OPERADORES                              -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-         1.	Aritméticos.                                                  -");
+                    System.out.println("-         2.	Relacionales.                                                 -");
+                    System.out.println("-         3.	Lógicos.                                                      -");
+                    System.out.println("-         4.	Asignacion.                                                   -");
+                    System.out.println("-         5.	Incremento / Decremento.                                      -");
+                    System.out.println("-------------------------------------------------------------------------------");
+                    System.out.print("Digite su opción: ");
+
+                    while (!menuscanner.hasNextInt()) {
+                        System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                        menuscanner.next();
+                        System.out.print("Digite su opción: ");
+                    }
+
+                    menuop = menuscanner.nextInt();
+
+                    switch (menuop) {
+
+                        case 1:
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                ARITMETICOS                                  -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                                                             -");
+                            System.out.println("-  |     OPERADOR     |           DESCRIPCIÓN            |     EJEMPLO     |  -");
+                            System.out.println("-  |Suma (+)          |Este operador suma dos números y  |   8 = 5 + 3     |  -");
+                            System.out.println("-  |                  |devuelve el resultado.            |                 |  -");
+                            System.out.println("-  |Resta (-)         |Este operador resta el segundo    |   2 = 5 - 3     |  -");
+                            System.out.println("-  |                  |número del primero y devuelve el  |                 |  -");
+                            System.out.println("-  |				  |resultado.                        |                 |  -");
+                            System.out.println("-  |Multiplicación(*) |Este operador multiplica dos      |  15 = 5 * 3     |  -");
+                            System.out.println("-  |                  |números y devuelve el resultado.  |                 |  -");
+                            System.out.println("-  |División (/)      |Este operador divide el primer    |   2 = 6 / 3     |  -");
+                            System.out.println("-  |                  |número por el segundo y devuelve  |                 |  -");
+                            System.out.println("-  |				  |el resultado.                     |                 |  -");
+                            System.out.println("-  |Módulo (%)        |Este operador devuelve el residuo |   2 = 5 % 3     |  -");
+                            System.out.println("-  |                  |de la división del primer número  |                 |  -");
+                            System.out.println("-  |				  |entre el segundo.                 |                 |  -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            break;
+
+                        case 2:
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                              RELACIONALES                                   -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                                                             -");
+                            System.out.println("-  |     OPERADOR     |           DESCRIPCIÓN            |     EJEMPLO      | -");
+                            System.out.println("-  |Igual (==)        | Devuelve true si los operandos   |     3 == '3'     | -");
+                            System.out.println("-  |                  | son iguales.                     |                  | -");
+                            System.out.println("-  |Diferente (!=)    | Devuelve true si los operandos   |   var1 != 4      | -");
+                            System.out.println("-  |                  |  no son iguales.	             |                  | -");
+                            System.out.println("-  |Mayor que (>)     | Devuelve true si el operando     |   var2 > var1    | -");
+                            System.out.println("-  |                  | izquierdo es mayor que el        |    12  > 2       | -");
+                            System.out.println("-  |				  |operando derecho.                 |                  | -");
+                            System.out.println("-  |Mayor o igual que | Devuelve true si el operando     |   var2 >= var1   | -");
+                            System.out.println("-  |(>=)              | izquierdo es mayor o igual que   |     var1 >= 3    | -");
+                            System.out.println("-  |				  | el operando derecho.             |                  | -");
+                            System.out.println("-  |Menor que (<)     | Devuelve true si el operando     |   var1 < var2    | -");
+                            System.out.println("-  |                  | izquierdo es menor que el        |    2   < 12      | -");
+                            System.out.println("-  |				  | operando derecho.                |                  | -");
+                            System.out.println("-  |Menor o igual que | Devuelve true si el operando     |   var1 <= var2   | -");
+                            System.out.println("-  |(<=)              | izquierdo es menor o igual que   |     var2 <= 5    | -");
+                            System.out.println("-  |				  | el operando derecho.             |                  | -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            break;
+
+                        case 3:
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                   LOGICOS                                   -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                                                             -");
+                            System.out.println("-  |    OPERADOR   |           DESCRIPCION            |       EJEMPLO      |  -");
+                            System.out.println("-  |AND (&&)       |Este operador devuelve true si    |                    |  -");
+                            System.out.println("-  |               |ambas expresiones booleanas son   |                    |  -");
+                            System.out.println("-  |			   |true. De lo contrario, devuelve   |                    |  -");
+                            System.out.println("-  |			   |false.                            |                    |  -");
+                            System.out.println("-  |OR (||)        |Este operador devuelve true si al |                    |  -");
+                            System.out.println("-  |               |menos una de las expresiones      |                    |  -");
+                            System.out.println("-  |			   |booleanas es true. De lo          |                    |  -");
+                            System.out.println("-  |			   |contrario, devuelve false.        |                    |  -");
+                            System.out.println("-  |               |                                  |                    |  -");
+                            System.out.println("-  |NOT (!)        |Este operador invierte el valor   |                    |  -");
+                            System.out.println("-  |               |booleano de la expresión a la que |                    |  -");
+                            System.out.println("-  |			   |se aplica. Si la expresión es     |                    |  -");
+                            System.out.println("-  |			   |true, devuelve false, y viceversa.|                    |  -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            break;
+
+                        case 4:
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                                 ASIGNACION                                  -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            break;
+
+                        case 5:
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-                          INCREMENTO / DECREMENTO                            -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            System.out.println("-  |    OPERADOR      |          DESCRIPCION             |     EJEMPLO     |  -");
+                            System.out.println("-  |Incremento (++)   |Este operador se utiliza para     |  int a = 5;a++; |  -");
+                            System.out.println("-  |                  |incrementar en uno el valor de    |     Res = 6     |  -");
+                            System.out.println("-  |				  |una variable.                     |                 |  -");
+                            System.out.println("-  |Decremento (--)   |Este operador se utiliza para     |  int a = 5;a--; |  -");
+                            System.out.println("-  |                  |decrementar en uno el valor de    |     Res = 4     |  -");
+                            System.out.println("-  |				  |una variable.                     |                 |  -");
+                            System.out.println("-------------------------------------------------------------------------------");
+                            break;
+
+                        default:
+                            System.out.println("Número no válido, por favor verifique.");
+                            break;
+                    }
                     break;
 
                 case 5:
