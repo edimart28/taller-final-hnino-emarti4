@@ -540,6 +540,61 @@ public class Main {
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                            CONDICIONAL TERNARIA                             -");
                     System.out.println("-------------------------------------------------------------------------------");
+                    System.out.println("-                          1. Teoria                                    -");
+                    System.out.println("-                          2. Practica                                  -");
+                    System.out.println("-                          12. Salir                                    -");
+                    System.out.println("-------------------------------------------------------------------------");
+                    System.out.println("Ingrese una sub opcion");
+
+                    while (!menuscanner.hasNextInt()) {
+                        System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                        menuscanner.next();
+                        System.out.print("Digite su opción: ");
+                    }
+                    subMenu = menuscanner.nextInt();
+                    switch (subMenu) {
+                        case 1:
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                       TEORIA TERNARIA                                                     -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            System.out.println("-                                                                                                                           -");
+                            System.out.println("- Es una forma compacta de escribir una estructura if-else en una sola línea. Son útiles para asignar valores               -");
+                            System.out.println("- o tomar decisiones simples de manera más concisa.                                                                         -");
+                            System.out.println("-----------------------------------------------------------------------------------------------------------------------------");
+                            break;
+
+                        case 2:
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-                               PRACTICA TERNARIA                       -");
+                            System.out.println("-------------------------------------------------------------------------");
+                            System.out.println("-                  Validacion numero mayor entre dos valores.           -");
+                            System.out.println("-------------------------------------------------------------------------");
+
+
+
+                            Scanner scanner = new Scanner(System.in);
+
+                            System.out.print("Ingrese el primer valor: ");
+                            int valor1 = menuscanner.nextInt();
+
+                            System.out.print("Ingrese el segundo valor: ");
+                            int valor2 = menuscanner.nextInt();
+
+
+                            int mayor = (valor1 > valor2) ? valor1 : valor2;
+                            System.out.println("El mayor es: " + mayor);
+
+                            break;
+
+                        case 12:
+                            System.out.println("Saliendo...");
+
+                            System.exit(0);
+                            break;
+                        default:
+                            System.out.println("Opcion no valida, inicie nuevamente");
+                            return;
+                    }
                     break;
                 case 8:
                     System.out.println("-------------------------------------------------------------------------------");
