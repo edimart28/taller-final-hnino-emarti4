@@ -49,6 +49,7 @@ public class Main {
 
                 case 1:
                     boolean volverAlMenuPrincipal = false;
+
                     while (!volverAlMenuPrincipal) {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                              DATOS PRIMITIVOS                               -");
@@ -67,9 +68,8 @@ public class Main {
                         System.out.println("-                                6. Double                                    -");
                         System.out.println("-                                7. Char                                      -");
                         System.out.println("-                                8. Boolean                                   -");
-                        System.out.println("-                                9. Volver menu principal                     -");
                         System.out.println("-                                                                             -");
-                        System.out.println("-      0. Salir                                                               -");
+                        System.out.println("-      0.	Salir                               9.	Volver Menú Principal     -");
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.print("Digite su opción: ");
 
@@ -98,7 +98,7 @@ public class Main {
                                 System.out.println("-        Ejemplo:                                                       -");
                                 System.out.println("-                          byte edad = 26                               -");
                                 System.out.println("-------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -113,7 +113,7 @@ public class Main {
                                 System.out.println("-        Ejemplo:                                                       -");
                                 System.out.println("-                          short año = 2024;                            -");
                                 System.out.println("-------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -129,7 +129,7 @@ public class Main {
                                 System.out.println("-        Ejemplo:                                                        -");
                                 System.out.println("-                          int valorTotal = 21456                        -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -144,7 +144,7 @@ public class Main {
                                 System.out.println("-      Ejemplo:                                                          -");
                                 System.out.println("-                         long token = 214562565454                      -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -159,7 +159,7 @@ public class Main {
                                 System.out.println("-      Ejemplo:                                                          -");
                                 System.out.println("-                         float TRM = 4021.63                            -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                      ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -174,7 +174,7 @@ public class Main {
                                 System.out.println("-      Ejemplo:                                                          -");
                                 System.out.println("-                         double Temperatura = 28.635464646              -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                      ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -188,7 +188,7 @@ public class Main {
                                 System.out.println("-      Ejemplo:                                                          -");
                                 System.out.println("-                         char Nota = B                                  -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                      ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -202,7 +202,7 @@ public class Main {
                                 System.out.println("-      Ejemplo:                                                          -");
                                 System.out.println("-                   boolean contraseñaCorrecta = false                   -");
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("          Ingrese Enter para volver al menu anterior                      ");
+                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -217,8 +217,11 @@ public class Main {
                                 break;
 
                         }
+
                     }
                     break;
+
+
 
                 case 2:
                     System.out.println("-------------------------------------------------------------------------------");
@@ -235,6 +238,7 @@ public class Main {
                     System.out.println("-          caracteresEscape = 'Texto con \"comillas\" y salto de línea';      -");
                     System.out.println("-------------------------------------------------------------------------------");
                     break;
+
                 case 3:
                     System.out.println("-------------------------------------------------------------------------------");
                     System.out.println("-                                 CONSTANTES                                  -");
@@ -253,24 +257,23 @@ public class Main {
                 case 4:
                     boolean volverAlMenuPrinci = false;
                     while (!volverAlMenuPrinci) {
-                        System.out.println("-------------------------------------------------------------------------------------------");
-                        System.out.println("-                                OPERADORES                                               -");
-                        System.out.println("-------------------------------------------------------------------------------------------");
-                        System.out.println("-  Un operador representa un símbolo que permite realizar operaciones                     -");
-                        System.out.println("-  aritméticas, relacionar elementos o hacer preguntas donde se involucra                 -");
-                        System.out.println("-  más de una condición.                                                                  -");
-                        System.out.println("-------------------------------------------------------------------------------------------");
-                        System.out.println("-                            TIPO  DE OPERADORES                                          -");
-                        System.out.println("-------------------------------------------------------------------------------------------");
-                        System.out.println("-                       1.	Aritméticos.                                                  -");
-                        System.out.println("-                       2.	Relacionales.                                                 -");
-                        System.out.println("-                       3.	Lógicos.                                                      -");
-                        System.out.println("-                       4.	Asignacion.                                                   -");
-                        System.out.println("-                       5.	Incremento / Decremento.                                      -");
-                        System.out.println("-                       6.	Volver al menu principal                                      -");
-                        System.out.println("-                                                                                         -");
-                        System.out.println("-      0.	Salir                                                                         -");
-                        System.out.println("-------------------------------------------------------------------------------------------");
+                        System.out.println("-------------------------------------------------------------------------------");
+                        System.out.println("-                                OPERADORES                                   -");
+                        System.out.println("-------------------------------------------------------------------------------");
+                        System.out.println("-  Un operador representa un símbolo que permite realizar operaciones         -");
+                        System.out.println("-  aritméticas, relacionar elementos o hacer preguntas donde se involucra     -");
+                        System.out.println("-  más de una condición.                                                      -");
+                        System.out.println("-------------------------------------------------------------------------------");
+                        System.out.println("-                            TIPO  DE OPERADORES                              -");
+                        System.out.println("-------------------------------------------------------------------------------");
+                        System.out.println("-                       1.	Aritméticos.                                      -");
+                        System.out.println("-                       2.	Relacionales.                                     -");
+                        System.out.println("-                       3.	Lógicos.                                          -");
+                        System.out.println("-                       4.	Asignacion.                                       -");
+                        System.out.println("-                       5.	Incremento / Decremento.                          -");
+                        System.out.println("-                                                                             -");
+                        System.out.println("-      0.	Salir                         6.	Volver al Menu principal      -");
+                        System.out.println("-------------------------------------------------------------------------------");
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -307,7 +310,7 @@ public class Main {
                                 System.out.println("-  |                  |de la división del primer número  |                 |  -");
                                 System.out.println("-  |				  |entre el segundo.                 |                 |  -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                  Ingrese Enter para volver al menu anterior                   ");
+                                System.out.print("                Ingrese Enter para volver al menu anterior                       ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -335,7 +338,7 @@ public class Main {
                                 System.out.println("-  |(<=)              | izquierdo es menor o igual que   |     var2 <= 5    | -");
                                 System.out.println("-  |				  | el operando derecho.             |                  | -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("                Ingrese Enter para volver al menu anterior                       ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -346,21 +349,21 @@ public class Main {
                                 System.out.println("-------------------------------------------------------------------------------");
                                 System.out.println("-                                                                             -");
                                 System.out.println("-  |    OPERADOR   |           DESCRIPCION            |       EJEMPLO      |  -");
-                                System.out.println("-  |AND (&&)       |Este operador devuelve true si    |                    |  -");
+                                System.out.println("-  |AND (&&)       |Este operador devuelve true si    | (5>3 && 3<4); true |  -");
                                 System.out.println("-  |               |ambas expresiones booleanas son   |                    |  -");
                                 System.out.println("-  |			   |true. De lo contrario, devuelve   |                    |  -");
                                 System.out.println("-  |			   |false.                            |                    |  -");
-                                System.out.println("-  |OR (||)        |Este operador devuelve true si al |                    |  -");
+                                System.out.println("-  |OR (||)        |Este operador devuelve true si al | (5>3 || 3<4); true |  -");
                                 System.out.println("-  |               |menos una de las expresiones      |                    |  -");
                                 System.out.println("-  |			   |booleanas es true. De lo          |                    |  -");
                                 System.out.println("-  |			   |contrario, devuelve false.        |                    |  -");
                                 System.out.println("-  |               |                                  |                    |  -");
-                                System.out.println("-  |NOT (!)        |Este operador invierte el valor   |                    |  -");
+                                System.out.println("-  |NOT (!)        |Este operador invierte el valor   |   false =!(5>3)    |  -");
                                 System.out.println("-  |               |booleano de la expresión a la que |                    |  -");
                                 System.out.println("-  |			   |se aplica. Si la expresión es     |                    |  -");
                                 System.out.println("-  |			   |true, devuelve false, y viceversa.|                    |  -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("                Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -403,7 +406,7 @@ public class Main {
                                 System.out.println("-  |                  |decrementar en uno el valor de    |     Res = 4     |  -");
                                 System.out.println("-  |				  |una variable.                     |                 |  -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                Ingrese Enter para volver al menu anterior                     ");
+                                System.out.print("                Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -421,6 +424,8 @@ public class Main {
                     }
                     break;
 
+
+
                 case 5:
                     boolean volverAlMenuPrincip = false;
                     while (!volverAlMenuPrincip) {
@@ -435,9 +440,8 @@ public class Main {
                         System.out.println("-         2.	Else if.                                                      -");
                         System.out.println("-         3.	Else.                                                         -");
                         System.out.println("-         4.	Programa                                                      -");
-                        System.out.println("-         5.	Volver al menu principal                                      -");
                         System.out.println("-                                                                             -");
-                        System.out.println("- 0. Salir                                                                   -");
+                        System.out.println("-      0.	Salir                            5.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.print("Digite su opción: ");
 
@@ -464,7 +468,7 @@ public class Main {
                                 System.out.println("-  cierto código solo si la condición se cumple.                              -");
                                 System.out.println("-                                                                             -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                  Ingrese Enter para volver al menu anterior                   ");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -480,7 +484,7 @@ public class Main {
                                 System.out.println("-  else final.                                                                -");
                                 System.out.println("-                                                                             -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                  Ingrese Enter para volver al menu anterior                   ");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -494,7 +498,7 @@ public class Main {
                                 System.out.println("-  especificada en la sentencia if es falsa.                                  -");
                                 System.out.println("-                                                                             -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                  Ingrese Enter para volver al menu anterior                   ");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -516,26 +520,25 @@ public class Main {
 
                                 if (edad < 0) {
                                     System.out.println("      * Edad no validad");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else if (edad >= 0 && edad <= 5) {
                                     System.out.println("      * Primera infancia");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else if (edad >= 6 && edad <= 11) {
                                     System.out.println("      * Infancia");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else if (edad >= 12 && edad <= 18) {
                                     System.out.println("      * Adolecencia");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else if (edad >= 19 && edad <= 26) {
                                     System.out.println("      * Juventud");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else if (edad >= 27 && edad <= 59) {
                                     System.out.println("      * Adultez");
-                                    System.out.println("                                                                        ");
+                                    System.out.println("");
                                 } else
                                     System.out.println("      * Vejez");
-                                System.out.println("                                                                        ");
-                                break;
+                                System.out.println("");
 
 
                             case 5:
@@ -545,12 +548,13 @@ public class Main {
 
                             default:
                                 System.out.println("Número no válido, por favor verifique.");
-                                System.out.println("                                                                        ");
+                                System.out.println("");
                                 break;
                         }
 
                     }
                     break;
+
 
                 case 6:
                     boolean volverAlMenuPrincipa = false;
@@ -560,9 +564,8 @@ public class Main {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                           1.	Switch.                                       -");
                         System.out.println("-                           2.	Programa                                      -");
-                        System.out.println("-                           3.	Volver al menu principal                      -");
                         System.out.println("-                                                                             -");
-                        System.out.println("-  0. Salir                                                                   -");
+                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.print("Digite su opción: ");
 
@@ -598,7 +601,7 @@ public class Main {
                                 System.out.println("-  usuario en aplicaciones que se ejecutan por consola.                       -");
                                 System.out.println("-                                                                             -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("                  Ingrese Enter para volver al menu anterior                   ");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                   ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -655,7 +658,6 @@ public class Main {
                                 volverAlMenuPrincipa = true;
                                 break;
 
-
                             default:
                                 System.out.println("Número no válido, por favor verifique.");
                                 System.out.println("");
@@ -663,6 +665,7 @@ public class Main {
                         }
                     }
                     break;
+
 
                 case 7:
                     boolean volverAlMenuPri = false;
@@ -672,11 +675,10 @@ public class Main {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                               1. Ternaria                                   -");
                         System.out.println("-                               2. Programa                                   -");
-                        System.out.println("-                               3. Volver al menu principal                   -");
                         System.out.println("-                                                                             -");
-                        System.out.println("-  0. Salir                                                                   -");
+                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("Ingrese una sub opcion");
+                        System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
                             System.out.println("La opcion ingresada no existe, intentalo nuevamente");
@@ -698,7 +700,7 @@ public class Main {
                                 System.out.println("- Son útiles para asignar valores o tomar decisiones simples de manera        -");
                                 System.out.println("- mas concisa.                                                                -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("    Ingrese Enter para volver al menu anterior                                 ");
+                                System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -723,7 +725,7 @@ public class Main {
                                 int mayor = (valor1 > valor2) ? valor1 : valor2;
                                 System.out.println("El mayor es: " + mayor);
 
-                                break;
+
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
@@ -732,12 +734,12 @@ public class Main {
 
                             default:
                                 System.out.println("Opcion no valida, inicie nuevamente");
-                                return;
-
+                                break;
                         }
                     }
-
                     break;
+
+
                 case 8:
                     boolean volverAlMenuPr = false;
                     while (!volverAlMenuPr) {
@@ -746,16 +748,15 @@ public class Main {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                          1. Do while                                        -");
                         System.out.println("-                          2. Programa                                        -");
-                        System.out.println("-                          3. Volver al menu principal                        -");
                         System.out.println("-                                                                             -");
-                        System.out.println("- 0. Salir                                                                    -");
+                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("Ingrese una sub opcion");
+                        System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
                             System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
                             menuscanner.next();
-                            System.out.println("Ingrese una sub opcion");
+                            System.out.print("Ingrese una sub opcion");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -763,6 +764,7 @@ public class Main {
                                 System.out.println("\n!Gracias¡");
                                 System.exit(0);
                                 break;
+
                             case 1:
                                 System.out.println("-------------------------------------------------------------------------------");
                                 System.out.println("-                                  DO WHILE                                   -");
@@ -773,7 +775,7 @@ public class Main {
                                 System.out.println("- condición específica.                                                       -");
                                 System.out.println("-------------------------------------------------------------------------------");
                                 System.out.println("-                                                                             -");
-                                System.out.println("    Ingrese Enter para volver al menu anterior                                 ");
+                                System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -799,7 +801,8 @@ public class Main {
 
 
                                 System.out.println("La suma total es: " + suma);
-                                break;
+                                System.out.println("");
+
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
@@ -808,10 +811,13 @@ public class Main {
 
                             default:
                                 System.out.println("Opcion no valida, inicie nuevamente");
-                                return;
+                                break;
                         }
+
                     }
                     break;
+
+
                 case 9:
                     boolean volverAlMenuP = false;
                     while (!volverAlMenuP) {
@@ -820,16 +826,15 @@ public class Main {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                                1. While                                     -");
                         System.out.println("-                                2. Programa                                  -");
-                        System.out.println("-                                3. Volver al menu principal                  -");
                         System.out.println("-                                                                             -");
-                        System.out.println("- 0. Salir                                                                    -");
+                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("Ingrese una sub opcion");
+                        System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
                             System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
                             menuscanner.next();
-                            System.out.println("Ingrese una sub opcion");
+                            System.out.print("Ingrese una sub opcion");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -845,7 +850,7 @@ public class Main {
                                 System.out.println("- Es una estructura de control que permite repetir un bloque de código            -");
                                 System.out.println("- mientras se cumpla una condición específica.                                    -");
                                 System.out.println("-----------------------------------------------------------------------------------");
-                                System.out.println("        Ingrese Enter para volver al menu anterior                                 ");
+                                System.out.print("        Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -867,19 +872,20 @@ public class Main {
                                     i++;
                                 }
                                 System.out.println("La suma es: " + suma);
-                                break;
+                                System.out.println("");
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
                                 volverAlMenuP = true;
                                 break;
+
                             default:
                                 System.out.println("Opcion no valida, inicie nuevamente");
-                                return;
-
+                                break;
                         }
                     }
                     break;
+
 
                 case 10:
                     boolean volverAlMenu = false;
@@ -890,16 +896,15 @@ public class Main {
                         System.out.println("-------------------------------------------------------------------------------");
                         System.out.println("-                                1. For                                       -");
                         System.out.println("-                                2. Programa                                  -");
-                        System.out.println("-                                3. Volver al menu principal                  -");
                         System.out.println("-                                                                             -");
-                        System.out.println("- 0. Salir                                                                    -");
+                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
                         System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("Ingrese una sub opcion");
+                        System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
                             System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
                             menuscanner.next();
-                            System.out.println("Ingrese una sub opcion");
+                            System.out.println("Ingrese una sub opcion: ");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -915,7 +920,7 @@ public class Main {
                                 System.out.println("- Es una estructura de control de flujo que se utiliza para repetir un bloque -");
                                 System.out.println("- de código un número específico de veces.                                    -");
                                 System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("      Ingrese Enter para volver al menu anterior                               ");
+                                System.out.print("      Ingrese Enter para volver al menu anterior                               ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
@@ -935,18 +940,22 @@ public class Main {
                                     suma += i;
 
                                     System.out.println("La sumatoria de los numeros enteros entre 1 y 10 es " + suma);
+                                    System.out.println("");
                                 }
                                 break;
+
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
                                 volverAlMenu = true;
                                 break;
-
-                            default:
-                                System.out.println("Opcion no valida, inicie nuevamente");
-                                return;
                         }
                     }
+                    break;
+
+                default:
+                    System.out.println("Opcion no valida, inicie nuevamente");
+                    break;
+
             }
 
             System.out.print("Presione enter para continuar...");
@@ -956,7 +965,6 @@ public class Main {
         } while (menu != 0);
 
         menuscanner.close();
-
 
     }
 
