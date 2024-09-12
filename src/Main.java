@@ -90,7 +90,7 @@ public class Main {
                             case 1:
 
                                 System.out.println("-------------------------------------------------------------------------");
-                                System.out.println("                           BYTE                                          ");
+                                System.out.println("-                          BYTE                                         -");
                                 System.out.println("-------------------------------------------------------------------------");
                                 System.out.println("-        El tipo de dato byte se utiliza para almacenar valores         -");
                                 System.out.println("-        numéricos enteros pequeños.                                    -");
@@ -105,7 +105,7 @@ public class Main {
 
                             case 2:
                                 System.out.println("-------------------------------------------------------------------------");
-                                System.out.println("                           SHORT                                         ");
+                                System.out.println("-                          SHORT                                        -");
                                 System.out.println("-------------------------------------------------------------------------");
                                 System.out.println("-        Se tipo de dato short se utiliza cuando se necesita un rango   -");
                                 System.out.println("-        más amplio que el proporcionado por los bytes.                 -");
@@ -120,7 +120,7 @@ public class Main {
 
                             case 3:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           INT                                            ");
+                                System.out.println("-                          INT                                           -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-        Es un tipo de dato que representa números enteros, es decir,    -");
                                 System.out.println("-        números sin parte decimal, estos pueden ser positivos, negativos-");
@@ -136,7 +136,7 @@ public class Main {
 
                             case 4:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           LONG                                           ");
+                                System.out.println("-                          LONG                                          -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-      El tipo de dato long se utiliza para representar números enteros  -");
                                 System.out.println("-      que requieren un rango mayor que el proporcionado por un tipo int -");
@@ -151,7 +151,7 @@ public class Main {
 
                             case 5:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           FLOAT                                          ");
+                                System.out.println("-                          FLOAT                                         -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-      El tipo de dato float se utiliza para representar números reales  -");
                                 System.out.println("-      (decimales)                                                       -");
@@ -166,7 +166,7 @@ public class Main {
 
                             case 6:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           DOUBLE                                         ");
+                                System.out.println("-                          DOUBLE                                        -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-  El tipo de dato double se utiliza para representar números con mayor  -");
                                 System.out.println("-  exactitud y un rango más amplio en comparación con el tipo float      -");
@@ -181,7 +181,7 @@ public class Main {
 
                             case 7:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           CHAR                                           ");
+                                System.out.println("-                          CHAR                                          -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-  El tipo de dato char se utiliza para representar un solo              -");
                                 System.out.println("-  carácter, como una letra, un dígito, un símbolo o un espacio.         -");
@@ -195,7 +195,7 @@ public class Main {
 
                             case 8:
                                 System.out.println("--------------------------------------------------------------------------");
-                                System.out.println("                           BOOLEAN                                        ");
+                                System.out.println("-                          BOOLEAN                                       -");
                                 System.out.println("--------------------------------------------------------------------------");
                                 System.out.println("-  El tipo de dato boolean se usa para representar valores de dos        -");
                                 System.out.println("-  posibles estados lógicos: true (verdadero) y false (falso).           -");
@@ -214,13 +214,13 @@ public class Main {
 
                             default:
                                 System.out.println("Número no válido, por favor verifique.");
+                                //System.exit(0); //Opcion para que finalice al ingresar numero no valido.
                                 break;
 
                         }
 
                     }
                     break;
-
 
 
                 case 2:
@@ -425,7 +425,6 @@ public class Main {
                     break;
 
 
-
                 case 5:
                     boolean volverAlMenuPrincip = false;
                     while (!volverAlMenuPrincip) {
@@ -540,6 +539,12 @@ public class Main {
                                     System.out.println("      * Vejez");
                                 System.out.println("");
 
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                menuscanner.nextLine();
+                                menuscanner.nextLine();
+
+                                break;
+
 
                             case 5:
                                 System.out.println("Volviendo al menú principal...");
@@ -549,6 +554,7 @@ public class Main {
                             default:
                                 System.out.println("Número no válido, por favor verifique.");
                                 System.out.println("");
+                                //System.exit(0);
                                 break;
                         }
 
@@ -626,32 +632,54 @@ public class Main {
                                     case 2:
                                         System.out.println("    * Su calificacion es F");
                                         System.out.println("");
+                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                        menuscanner.nextLine();
+                                        menuscanner.nextLine();
                                         break;
                                     case 3:
                                     case 4:
                                         System.out.println("    * Su calificacion es D");
                                         System.out.println("");
+                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                        menuscanner.nextLine();
+                                        menuscanner.nextLine();
                                         break;
                                     case 5:
                                     case 6:
                                         System.out.println("    * Su calificacion es C");
                                         System.out.println("");
+                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                        menuscanner.nextLine();
+                                        menuscanner.nextLine();
                                         break;
                                     case 7:
                                     case 8:
                                         System.out.println("    * Su calificacion es B");
                                         System.out.println("");
+                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                        menuscanner.nextLine();
+                                        menuscanner.nextLine();
                                         break;
                                     case 9:
                                     case 10:
                                         System.out.println("    * Su calificacion es A");
                                         System.out.println("");
+                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                        menuscanner.nextLine();
+                                        menuscanner.nextLine();
                                         break;
+
+
                                     default:
                                         System.out.println("Número no válido, por favor verifique.");
                                         System.out.println("");
+
+
                                         break;
+
+
                                 }
+                                break;
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
@@ -661,6 +689,7 @@ public class Main {
                             default:
                                 System.out.println("Número no válido, por favor verifique.");
                                 System.out.println("");
+
                                 break;
                         }
                     }
@@ -724,12 +753,16 @@ public class Main {
 
                                 int mayor = (valor1 > valor2) ? valor1 : valor2;
                                 System.out.println("El mayor es: " + mayor);
-
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                menuscanner.nextLine();
+                                menuscanner.nextLine();
+                                break;
 
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
                                 volverAlMenuPri = true;
+
                                 break;
 
                             default:
@@ -802,6 +835,10 @@ public class Main {
 
                                 System.out.println("La suma total es: " + suma);
                                 System.out.println("");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                menuscanner.nextLine();
+                                menuscanner.nextLine();
+                                break;
 
 
                             case 3:
@@ -873,6 +910,10 @@ public class Main {
                                 }
                                 System.out.println("La suma es: " + suma);
                                 System.out.println("");
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                menuscanner.nextLine();
+                                menuscanner.nextLine();
+                                break;
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
@@ -936,12 +977,17 @@ public class Main {
 
                                 int suma = 0;
 
+
                                 for (int i = 1; i <= 10; i++) {
                                     suma += i;
 
                                     System.out.println("La sumatoria de los numeros enteros entre 1 y 10 es " + suma);
                                     System.out.println("");
+
                                 }
+                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
+                                menuscanner.nextLine();
+                                menuscanner.nextLine();
                                 break;
 
                             case 3:
