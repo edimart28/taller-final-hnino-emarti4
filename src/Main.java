@@ -1,4 +1,4 @@
-import conceptos.DatosPrimitivos;
+import conceptos.*;
 import menus.Menu;
 import menus.SubMenu;
 
@@ -96,6 +96,7 @@ public class Main {
 
                             case 5:
                                 DatosPrimitivos.conceptoFloat();
+
                                 System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -143,56 +144,21 @@ public class Main {
 
 
                 case 2:
-                    System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-                                   STRING                                    -");
-                    System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-  El tipo de dato String representa cadenas de texto, que pueden ser         -");
-                    System.out.println("-  escritas utilizando comillas simples, dobles o acentos graves (backticks). -");
-                    System.out.println("-  Los acentos graves permiten crear plantillas literales (template literals) -");
-                    System.out.println("-  que incluyen interpolación de variables y expresiones.                     -");
-                    System.out.println("-                                                                             -");
-                    System.out.println("-  Ejemplo                                                                    -");
-                    System.out.println("-          comillasSimples = 'Hola, mundo!';                                  -");
-                    System.out.println("-          plantillaLiteral = `Mi número favorito es ${entero}`;              -");
-                    System.out.println("-          caracteresEscape = 'Texto con \"comillas\" y salto de línea';      -");
-                    System.out.println("-------------------------------------------------------------------------------");
+                    Cstring.conceptosString();
                     break;
 
                 case 3:
-                    System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-                                 CONSTANTES                                  -");
-                    System.out.println("-------------------------------------------------------------------------------");
-                    System.out.println("-  Es un tipo especial de variable cuyo valor no puede ser modificado una     -");
-                    System.out.println("-  vez que ha sido asignado. A diferencia de las variables regulares, que se  -");
-                    System.out.println("-  pueden actualizar a lo largo de la ejecución de un programa, las           -");
-                    System.out.println("-  constantes mantienen su valor original durante toda su vida útil.          -");
-                    System.out.println("-                                                                             -");
-                    System.out.println("-  Ejemplo                                                                    -");
-                    System.out.println("-               const nombreConstante = valorInicial;                         -");
-                    System.out.println("-                         const PI = 3.14159;                                 -");
-                    System.out.println("-------------------------------------------------------------------------------");
+                    Constantes.conceptosConstantes();
                     break;
 
                 case 4:
                     boolean volverAlMenuPrinci = false;
                     while (!volverAlMenuPrinci) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                                OPERADORES                                   -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-  Un operador representa un símbolo que permite realizar operaciones         -");
-                        System.out.println("-  aritméticas, relacionar elementos o hacer preguntas donde se involucra     -");
-                        System.out.println("-  más de una condición.                                                      -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                            TIPO  DE OPERADORES                              -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                       1.	Aritméticos.                                      -");
-                        System.out.println("-                       2.	Relacionales.                                     -");
-                        System.out.println("-                       3.	Lógicos.                                          -");
-                        System.out.println("-                       4.	Asignacion.                                       -");
-                        System.out.println("-                       5.	Incremento / Decremento.                          -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                         6.	Volver al Menu principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+
+                        TipoOperadores.conceptoOpradores();
+
+                        SubMenu.subMenuOperadores();
+
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -210,121 +176,36 @@ public class Main {
                                 break;
 
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                ARITMETICOS                                  -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-  |     OPERADOR     |           DESCRIPCIÓN            |     EJEMPLO     |  -");
-                                System.out.println("-  |Suma (+)          |Este operador suma dos números y  |   8 = 5 + 3     |  -");
-                                System.out.println("-  |                  |devuelve el resultado.            |                 |  -");
-                                System.out.println("-  |Resta (-)         |Este operador resta el segundo    |   2 = 5 - 3     |  -");
-                                System.out.println("-  |                  |número del primero y devuelve el  |                 |  -");
-                                System.out.println("-  |				  |resultado.                        |                 |  -");
-                                System.out.println("-  |Multiplicación(*) |Este operador multiplica dos      |  15 = 5 * 3     |  -");
-                                System.out.println("-  |                  |números y devuelve el resultado.  |                 |  -");
-                                System.out.println("-  |División (/)      |Este operador divide el primer    |   2 = 6 / 3     |  -");
-                                System.out.println("-  |                  |número por el segundo y devuelve  |                 |  -");
-                                System.out.println("-  |				  |el resultado.                     |                 |  -");
-                                System.out.println("-  |Módulo (%)        |Este operador devuelve el residuo |   2 = 5 % 3     |  -");
-                                System.out.println("-  |                  |de la división del primer número  |                 |  -");
-                                System.out.println("-  |				  |entre el segundo.                 |                 |  -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                TipoOperadores.conceptoAritmeticos();
+
                                 System.out.print("                Ingrese Enter para volver al menu anterior                       ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 2:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                              RELACIONALES                                   -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-  |     OPERADOR     |           DESCRIPCIÓN            |     EJEMPLO      | -");
-                                System.out.println("-  |Igual (==)        | Devuelve true si los operandos   |     3 == '3'     | -");
-                                System.out.println("-  |                  | son iguales.                     |                  | -");
-                                System.out.println("-  |Diferente (!=)    | Devuelve true si los operandos   |   var1 != 4      | -");
-                                System.out.println("-  |                  |  no son iguales.	             |                  | -");
-                                System.out.println("-  |Mayor que (>)     | Devuelve true si el operando     |   var2 > var1    | -");
-                                System.out.println("-  |                  | izquierdo es mayor que el        |    12  > 2       | -");
-                                System.out.println("-  |				  |operando derecho.                 |                  | -");
-                                System.out.println("-  |Mayor o igual que | Devuelve true si el operando     |   var2 >= var1   | -");
-                                System.out.println("-  |(>=)              | izquierdo es mayor o igual que   |     var1 >= 3    | -");
-                                System.out.println("-  |				  | el operando derecho.             |                  | -");
-                                System.out.println("-  |Menor que (<)     | Devuelve true si el operando     |   var1 < var2    | -");
-                                System.out.println("-  |                  | izquierdo es menor que el        |    2   < 12      | -");
-                                System.out.println("-  |				  | operando derecho.                |                  | -");
-                                System.out.println("-  |Menor o igual que | Devuelve true si el operando     |   var1 <= var2   | -");
-                                System.out.println("-  |(<=)              | izquierdo es menor o igual que   |     var2 <= 5    | -");
-                                System.out.println("-  |				  | el operando derecho.             |                  | -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                TipoOperadores.conceptoRelacionales();
                                 System.out.print("                Ingrese Enter para volver al menu anterior                       ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 3:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                   LOGICOS                                   -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-  |    OPERADOR   |           DESCRIPCION            |       EJEMPLO      |  -");
-                                System.out.println("-  |AND (&&)       |Este operador devuelve true si    | (5>3 && 3<4); true |  -");
-                                System.out.println("-  |               |ambas expresiones booleanas son   |                    |  -");
-                                System.out.println("-  |			   |true. De lo contrario, devuelve   |                    |  -");
-                                System.out.println("-  |			   |false.                            |                    |  -");
-                                System.out.println("-  |OR (||)        |Este operador devuelve true si al | (5>3 || 3<4); true |  -");
-                                System.out.println("-  |               |menos una de las expresiones      |                    |  -");
-                                System.out.println("-  |			   |booleanas es true. De lo          |                    |  -");
-                                System.out.println("-  |			   |contrario, devuelve false.        |                    |  -");
-                                System.out.println("-  |               |                                  |                    |  -");
-                                System.out.println("-  |NOT (!)        |Este operador invierte el valor   |   false =!(5>3)    |  -");
-                                System.out.println("-  |               |booleano de la expresión a la que |                    |  -");
-                                System.out.println("-  |			   |se aplica. Si la expresión es     |                    |  -");
-                                System.out.println("-  |			   |true, devuelve false, y viceversa.|                    |  -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                TipoOperadores.conceptoLogicos();
                                 System.out.print("                Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 4:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                 ASIGNACION                                  -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  |               |                                  |                    |  -");
-                                System.out.println("-  |    OPERADOR   |           DESCRIPCION            |       EJEMPLO      |  -");
-                                System.out.println("-  |       =       |La asignación simple asigna el 	  |    int = a = 5;    |  -");
-                                System.out.println("-  |               |valor de b al operando a.         |                    |  -");
-                                System.out.println("-  |      +=       |A a se le asigna el valor de      |   a = 5; a += 3;   |  -");
-                                System.out.println("-  |               |a + b.                            |       Resp. 8      |  -");
-                                System.out.println("-  |	  -=	   |Al operando a se le asigna el     |   a = 5; a -= 3;   |  -");
-                                System.out.println("-  |               |valor de a - b.                   |       Resp. 2      |  -");
-                                System.out.println("-  |	  *=	   |La asignación de multiplicación   |   a = 5; a *= 3;   |  -");
-                                System.out.println("-  |               |hace que a reciba el resultado    |       Resp. 15     |  -");
-                                System.out.println("-  |			   |de a * b.                         |                    |  -");
-                                System.out.println("-  |      /=       |Aquí, a recibe el resultado de    |  a = 6; a /= 3;    |  -");
-                                System.out.println("-  |               |dividir a entre b.                |      Resp. 2       |  -");
-                                System.out.println("-  |      %=       |Calcula el modulo del operando izq|  a = 5; a %= 3;    |  -");
-                                System.out.println("-  |			   |por el operador der y asignaa el  |      Resp. 2       |  -");
-                                System.out.println("-  |			   |resultado al operando izq.        |                    |  -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                TipoOperadores.conceptoAsignacion();
                                 System.out.println("                Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 5:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                          INCREMENTO / DECREMENTO                            -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  |    OPERADOR      |          DESCRIPCION             |     EJEMPLO     |  -");
-                                System.out.println("-  |Incremento (++)   |Este operador se utiliza para     |  int a = 5;a++; |  -");
-                                System.out.println("-  |                  |incrementar en uno el valor de    |     Res = 6     |  -");
-                                System.out.println("-  |				  |una variable.                     |                 |  -");
-                                System.out.println("-  |Decremento (--)   |Este operador se utiliza para     |  int a = 5;a--; |  -");
-                                System.out.println("-  |                  |decrementar en uno el valor de    |     Res = 4     |  -");
-                                System.out.println("-  |				  |una variable.                     |                 |  -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                TipoOperadores.conceptoIncremento();
                                 System.out.print("                Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -347,20 +228,9 @@ public class Main {
                 case 5:
                     boolean volverAlMenuPrincip = false;
                     while (!volverAlMenuPrincip) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                        CONDICIONAL IF, ELSE IF Y ELSE                       -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-  Las estructuras de control establecen condicionales en nuestros código.    -");
-                        System.out.println("-  Por ejemplo, qué condiciones deben cumplirse para realizar una operación   -");
-                        System.out.println("-  o qué debe ocurrir para ejecutar una función.                              -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-         1.	If.                                                           -");
-                        System.out.println("-         2.	Else if.                                                      -");
-                        System.out.println("-         3.	Else.                                                         -");
-                        System.out.println("-         4.	Programa                                                      -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            5.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+                        CondicionalIfElse.conceptoIfElse();
+
+                        SubMenu.subMenuIf();
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -379,43 +249,24 @@ public class Main {
                                 break;
 
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                     IF                                      -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  La sentencia if en Java se utiliza para evaluar una condición y ejecutar   -");
-                                System.out.println("-  cierto código solo si la condición se cumple.                              -");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                CondicionalIfElse.conceptoIf();
+
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 2:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                  ELSE IF                                    -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  La sentencia else if en Java es una extensión de la sentencia if-else que  -");
-                                System.out.println("-  permite especificar múltiples condiciones de control de flujo en un solo   -");
-                                System.out.println("-  bloque de código. Es similar a la sentencia if-else, pero permite          -");
-                                System.out.println("-  especificar varias condiciones adicionales antes de llegar a la sentencia  -");
-                                System.out.println("-  else final.                                                                -");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                CondicionalIfElse.conceptoElseIf();
+
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
                                 break;
 
                             case 3:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                   ELSE                                      -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  La sentencia else en Java se usa junto con la sentencia if para            -");
-                                System.out.println("-  especificar un bloque de código que se ejecutará si la condición           -");
-                                System.out.println("-  especificada en la sentencia if es falsa.                                  -");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                CondicionalIfElse.conceptoElse();
+
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -484,14 +335,9 @@ public class Main {
                 case 6:
                     boolean volverAlMenuPrincipa = false;
                     while (!volverAlMenuPrincipa) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                             CONDICIONAL SWITCH                              -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                           1.	Switch.                                       -");
-                        System.out.println("-                           2.	Programa                                      -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+
+                        SubMenu.subMenuSwitc();
+
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -510,22 +356,8 @@ public class Main {
                                 break;
 
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                 SWITCH                                      -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-  El condicional switch case es una estructura que evalúa más de un caso     -");
-                                System.out.println("-  y se caracteriza por:                                                      -");
-                                System.out.println("-																			  -");
-                                System.out.println("-    * Selección de una opción entre varias.                                  -");
-                                System.out.println("-    * Switch recibe un “caso” y lo evalúa hasta encontrar el caso que        -");
-                                System.out.println("-      corresponda.                                                           -");
-                                System.out.println("-    * Se puede usar la opción “default” para cuando no se encuentra el       -");
-                                System.out.println("-      caso dado.                                                             -");
-                                System.out.println("-																			  -");
-                                System.out.println("-  Este condicional es útil a la hora de definir por ejemplo un menú de       -");
-                                System.out.println("-  usuario en aplicaciones que se ejecutan por consola.                       -");
-                                System.out.println("-                                                                             -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                               Cswitch.conceptoSwitc();
+
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                   ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -618,14 +450,9 @@ public class Main {
                 case 7:
                     boolean volverAlMenuPri = false;
                     while (!volverAlMenuPri) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                            CONDICIONAL TERNARIA                             -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                               1. Ternaria                                   -");
-                        System.out.println("-                               2. Programa                                   -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+
+                        SubMenu.subMenuTernarias();
+
                         System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
@@ -640,14 +467,8 @@ public class Main {
                                 System.exit(0);
                                 break;
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                               TERNARIA                                      -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
-                                System.out.println("- Es una forma compacta de escribir una estructura if-else en una sola línea. -");
-                                System.out.println("- Son útiles para asignar valores o tomar decisiones simples de manera        -");
-                                System.out.println("- mas concisa.                                                                -");
-                                System.out.println("-------------------------------------------------------------------------------");
+                                Ternaria.conceptoTernaria();
+
                                 System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();

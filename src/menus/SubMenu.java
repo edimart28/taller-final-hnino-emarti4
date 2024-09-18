@@ -16,4 +16,51 @@ public class SubMenu {
         System.out.println("-      0.	Salir                               9.	Volver Menú Principal     -");
         System.out.println("-------------------------------------------------------------------------------");
     }
+
+    public static void subMenuOperadores() {
+        System.out.println("-                            TIPO  DE OPERADORES                              -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                       1.	Aritméticos.                                      -");
+        System.out.println("-                       2.	Relacionales.                                     -");
+        System.out.println("-                       3.	Lógicos.                                          -");
+        System.out.println("-                       4.	Asignacion.                                       -");
+        System.out.println("-                       5.	Incremento / Decremento.                          -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                         6.	Volver al Menu principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+
+    public static void subMenuIf() {
+        System.out.println("-                                                                             -");
+        System.out.println("-         1.	If.                                                           -");
+        System.out.println("-         2.	Else if.                                                      -");
+        System.out.println("-         3.	Else.                                                         -");
+        System.out.println("-         4.	Programa                                                      -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            5.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+
+    public static void subMenuSwitc() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                             CONDICIONAL SWITCH                              -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                           1.	Switch.                                       -");
+        System.out.println("-                           2.	Programa                                      -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+
+    public static void subMenuTernarias() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                            CONDICIONAL TERNARIA                             -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                               1. Ternaria                                   -");
+        System.out.println("-                               2. Programa                                   -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+
+    }
 }
