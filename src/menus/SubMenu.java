@@ -63,4 +63,37 @@ public class SubMenu {
         System.out.println("-------------------------------------------------------------------------------");
 
     }
+
+    public static void subMenuDoWhile() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                                 BUCLE DO WHILE                              -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                          1. Do while                                        -");
+        System.out.println("-                          2. Programa                                        -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+
+    public static void subMenuWhile() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                               BUCLE WHILE                                   -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                                1. While                                     -");
+        System.out.println("-                                2. Programa                                  -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+
+    public static void subMenuFor() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                               BUCLE FOR                                     -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                                1. For                                       -");
+        System.out.println("-                                2. Programa                                  -");
+        System.out.println("-                                                                             -");
+        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
 }

@@ -516,14 +516,9 @@ public class Main {
                 case 8:
                     boolean volverAlMenuPr = false;
                     while (!volverAlMenuPr) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                                 BUCLE DO WHILE                              -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                          1. Do while                                        -");
-                        System.out.println("-                          2. Programa                                        -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+
+                       SubMenu.subMenuDoWhile();
+
                         System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
@@ -539,15 +534,9 @@ public class Main {
                                 break;
 
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                  DO WHILE                                   -");
-                                System.out.println("----------------------------------------------------------------------------- -");
-                                System.out.println("-                                                                             -");
-                                System.out.println("- Es una estructura de control en programación que permite ejecutar un bloque -");
-                                System.out.println("- de código al menos una vez y luego repetirlo mientras se cumpla una         -");
-                                System.out.println("- condición específica.                                                       -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
+
+                                DoWhile.conceptoDoWhile();
+
                                 System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -598,14 +587,9 @@ public class Main {
                 case 9:
                     boolean volverAlMenuP = false;
                     while (!volverAlMenuP) {
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                               BUCLE WHILE                                   -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                                1. While                                     -");
-                        System.out.println("-                                2. Programa                                  -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+
+                        SubMenu.subMenuWhile();
+
                         System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -620,13 +604,9 @@ public class Main {
                                 System.exit(0);
                                 break;
                             case 1:
-                                System.out.println("-----------------------------------------------------------------------------------");
-                                System.out.println("-                                    WHILE                                        -");
-                                System.out.println("-----------------------------------------------------------------------------------");
-                                System.out.println("-                                                                                 -");
-                                System.out.println("- Es una estructura de control que permite repetir un bloque de código            -");
-                                System.out.println("- mientras se cumpla una condición específica.                                    -");
-                                System.out.println("-----------------------------------------------------------------------------------");
+
+                                While.conceptoWhile();
+
                                 System.out.print("        Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -672,14 +652,8 @@ public class Main {
                     boolean volverAlMenu = false;
                     while (!volverAlMenu) {
 
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                               BUCLE FOR                                     -");
-                        System.out.println("-------------------------------------------------------------------------------");
-                        System.out.println("-                                1. For                                       -");
-                        System.out.println("-                                2. Programa                                  -");
-                        System.out.println("-                                                                             -");
-                        System.out.println("-      0.	Salir                            3.	Volver al MenÚ Principal      -");
-                        System.out.println("-------------------------------------------------------------------------------");
+                        SubMenu.subMenuFor();
+
                         System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
@@ -694,13 +668,9 @@ public class Main {
                                 System.exit(0);
                                 break;
                             case 1:
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                  FOR                                        -");
-                                System.out.println("-------------------------------------------------------------------------------");
-                                System.out.println("-                                                                             -");
-                                System.out.println("- Es una estructura de control de flujo que se utiliza para repetir un bloque -");
-                                System.out.println("- de código un número específico de veces.                                    -");
-                                System.out.println("-------------------------------------------------------------------------------");
+
+                                For.conceptoFor();
+
                                 System.out.print("      Ingrese Enter para volver al menu anterior                               ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
