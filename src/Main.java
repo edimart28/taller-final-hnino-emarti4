@@ -228,7 +228,7 @@ public class Main {
                 case 5:
                     boolean volverAlMenuPrincip = false;
                     while (!volverAlMenuPrincip) {
-                        CondicionalIfElse.conceptoIfElse();
+                        Condicionales.conceptoIfElse();
 
                         SubMenu.subMenuIf();
                         System.out.print("Digite su opción: ");
@@ -249,7 +249,7 @@ public class Main {
                                 break;
 
                             case 1:
-                                CondicionalIfElse.conceptoIf();
+                                Condicionales.conceptoIf();
 
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
@@ -257,7 +257,7 @@ public class Main {
                                 break;
 
                             case 2:
-                                CondicionalIfElse.conceptoElseIf();
+                                Condicionales.conceptoElseIf();
 
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
@@ -265,7 +265,7 @@ public class Main {
                                 break;
 
                             case 3:
-                                CondicionalIfElse.conceptoElse();
+                                Condicionales.conceptoElse();
 
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
@@ -356,7 +356,7 @@ public class Main {
                                 break;
 
                             case 1:
-                               Cswitch.conceptoSwitc();
+                               Condicionales.conceptoSwitc();
 
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                   ");
                                 menuscanner.nextLine();
@@ -467,7 +467,7 @@ public class Main {
                                 System.exit(0);
                                 break;
                             case 1:
-                                Ternaria.conceptoTernaria();
+                                Condicionales.conceptoTernaria();
 
                                 System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
@@ -535,7 +535,7 @@ public class Main {
 
                             case 1:
 
-                                DoWhile.conceptoDoWhile();
+                                Ciclos.conceptoDoWhile();
 
                                 System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
@@ -605,7 +605,7 @@ public class Main {
                                 break;
                             case 1:
 
-                                While.conceptoWhile();
+                                Ciclos.conceptoWhile();
 
                                 System.out.print("        Ingrese Enter para volver al menu anterior                                 ");
                                 menuscanner.nextLine();
@@ -669,7 +669,7 @@ public class Main {
                                 break;
                             case 1:
 
-                                For.conceptoFor();
+                                Ciclos.conceptoFor();
 
                                 System.out.print("      Ingrese Enter para volver al menu anterior                               ");
                                 menuscanner.nextLine();

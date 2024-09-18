@@ -1,7 +1,6 @@
 package conceptos;
 
-public class CondicionalIfElse {
-
+public class Condicionales {
     public static void conceptoIfElse() {
         System.out.println("-------------------------------------------------------------------------------");
         System.out.println("-                        CONDICIONAL IF, ELSE IF Y ELSE                       -");
@@ -44,5 +43,34 @@ public class CondicionalIfElse {
         System.out.println("-                                                                             -");
         System.out.println("-------------------------------------------------------------------------------");
     }
-}
+    public static void conceptoSwitc() {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                                 SWITCH                                      -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-  El condicional switch case es una estructura que evalúa más de un caso     -");
+        System.out.println("-  y se caracteriza por:                                                      -");
+        System.out.println("-																			  -");
+        System.out.println("-    * Selección de una opción entre varias.                                  -");
+        System.out.println("-    * Switch recibe un “caso” y lo evalúa hasta encontrar el caso que        -");
+        System.out.println("-      corresponda.                                                           -");
+        System.out.println("-    * Se puede usar la opción “default” para cuando no se encuentra el       -");
+        System.out.println("-      caso dado.                                                             -");
+        System.out.println("-																			  -");
+        System.out.println("-  Este condicional es útil a la hora de definir por ejemplo un menú de       -");
+        System.out.println("-  usuario en aplicaciones que se ejecutan por consola.                       -");
+        System.out.println("-                                                                             -");
+        System.out.println("-------------------------------------------------------------------------------");
+    }
+    public static void conceptoTernaria () {
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                               TERNARIA                                      -");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-                                                                             -");
+        System.out.println("- Es una forma compacta de escribir una estructura if-else en una sola línea. -");
+        System.out.println("- Son útiles para asignar valores o tomar decisiones simples de manera        -");
+        System.out.println("- mas concisa.                                                                -");
+        System.out.println("-------------------------------------------------------------------------------");
 
+    }
+
+}
