@@ -1,4 +1,5 @@
 import conceptos.*;
+import funciones.Funciones;
 import menus.Menu;
 import menus.SubMenu;
 
@@ -20,12 +21,12 @@ public class Main {
             Menu.menuPrincipal();
 
             System.out.print("Digite su opción: ");
-
             while (!menuscanner.hasNextInt()) {
-                System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+
+                Funciones.funcionOpcionNoValida();
                 menuscanner.next();
-                System.out.print("Digite su opción: ");
             }
+
 
             menu = menuscanner.nextInt();
 
@@ -33,6 +34,7 @@ public class Main {
                 case 0:
                     System.out.println("\n!Gracias¡");
                     System.exit(0);
+
                     break;
 
                 case 1:
@@ -45,10 +47,10 @@ public class Main {
 
                         System.out.print("Digite su opción: ");
 
+
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Digite su opción: ");
                         }
 
                         subMenu = menuscanner.nextInt();
@@ -78,7 +80,7 @@ public class Main {
                                 break;
 
                             case 3:
-                                DatosPrimitivos.conceptosByte();
+                                DatosPrimitivos.conceptosInt();
 
                                 System.out.print("          Ingrese Enter para volver al menu anterior                     ");
                                 menuscanner.nextLine();
@@ -121,7 +123,7 @@ public class Main {
 
                             case 8:
                                 DatosPrimitivos.conceptoBoolean();
-                                
+
                                 System.out.print("          Ingrese Enter para volver al menu anterior                      ");
                                 menuscanner.nextLine();
                                 menuscanner.nextLine();
@@ -162,9 +164,8 @@ public class Main {
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Digite su opción: ");
                         }
 
                         menuop = menuscanner.nextInt();
@@ -234,9 +235,8 @@ public class Main {
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Digite su opción: ");
                         }
 
                         menuif = menuscanner.nextInt();
@@ -341,9 +341,8 @@ public class Main {
                         System.out.print("Digite su opción: ");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La opcion que ingresada no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Digite su opción: ");
                         }
 
                         menusw = menuscanner.nextInt();
@@ -356,7 +355,7 @@ public class Main {
                                 break;
 
                             case 1:
-                               Condicionales.conceptoSwitc();
+                                Condicionales.conceptoSwitc();
 
                                 System.out.print("                  Ingrese Enter para volver al menu anterior                   ");
                                 menuscanner.nextLine();
@@ -456,9 +455,8 @@ public class Main {
                         System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La opcion ingresada no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Digite su opción: ");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -517,14 +515,13 @@ public class Main {
                     boolean volverAlMenuPr = false;
                     while (!volverAlMenuPr) {
 
-                       SubMenu.subMenuDoWhile();
+                        SubMenu.subMenuDoWhile();
 
                         System.out.print("Ingrese una sub opcion");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Ingrese una sub opcion");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -593,9 +590,8 @@ public class Main {
                         System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.print("Ingrese una sub opcion");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
@@ -657,9 +653,8 @@ public class Main {
                         System.out.print("Ingrese una sub opcion: ");
 
                         while (!menuscanner.hasNextInt()) {
-                            System.out.println("La sub opcion que ingresaste no existe, intentalo nuevamente");
+                            Funciones.funcionOpcionNoValida();
                             menuscanner.next();
-                            System.out.println("Ingrese una sub opcion: ");
                         }
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
