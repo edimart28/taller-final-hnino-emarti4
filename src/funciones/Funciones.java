@@ -20,7 +20,6 @@ public class Funciones {
         System.out.print("          Ingrese Enter para volver al menu anterior                     ");
         scanner.nextLine();
         scanner.nextLine();
-
     }
 
 }

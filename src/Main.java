@@ -584,7 +584,6 @@ public class Main {
                                 System.out.println("-      Realizar la suma de los numero del 1 al 10.                            -");
                                 System.out.println("-------------------------------------------------------------------------------");
 
-
                                 int suma = 0;
 
 
@@ -611,7 +610,7 @@ public class Main {
                     break;
             }
 
-            System.out.print("Presione enter para continuar...");
+            System.out.print("Presione enter para continuar..." );
             menuscanner.nextLine();
             menuscanner.nextLine();
 
