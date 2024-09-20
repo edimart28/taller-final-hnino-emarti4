@@ -11,6 +11,12 @@ public class Funciones {
 
     }
 
+    public static void funcionSalir() {
+        System.out.println("\n!Gracias¡");
+        System.exit(0);
+
+
+    }
 
 }
 

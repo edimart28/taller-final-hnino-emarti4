@@ -32,9 +32,7 @@ public class Main {
 
             switch (menu) {
                 case 0:
-                    System.out.println("\n!Gracias¡");
-                    System.exit(0);
-
+                    Funciones.funcionSalir();
                     break;
 
                 case 1:
@@ -57,8 +55,7 @@ public class Main {
 
                         switch (subMenu) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
 
                             case 1:
@@ -172,8 +169,7 @@ public class Main {
 
                         switch (menuop) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
 
                             case 1:
@@ -244,8 +240,7 @@ public class Main {
                         switch (menuif) {
 
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
 
                             case 1:
@@ -350,8 +345,7 @@ public class Main {
                         switch (menusw) {
 
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
 
                             case 1:
@@ -461,8 +455,7 @@ public class Main {
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
                             case 1:
                                 Condicionales.conceptoTernaria();
@@ -526,8 +519,7 @@ public class Main {
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
 
                             case 1:
@@ -596,8 +588,7 @@ public class Main {
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
                             case 1:
 
@@ -659,8 +650,7 @@ public class Main {
                         subMenu = menuscanner.nextInt();
                         switch (subMenu) {
                             case 0:
-                                System.out.println("\n!Gracias¡");
-                                System.exit(0);
+                                Funciones.funcionSalir();
                                 break;
                             case 1:
 
