@@ -22,6 +22,10 @@ public class Funciones {
         scanner.nextLine();
     }
 
+    public static void funcionDigiteSuOpcion(){
+        System.out.print("Digite su opción: ");
+    }
+
 }
 
 

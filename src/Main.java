@@ -20,7 +20,7 @@ public class Main {
 
             Menu.menuPrincipal();
 
-            System.out.print("Digite su opción: ");
+            Funciones.funcionDigiteSuOpcion();
 
             while (!menuscanner.hasNextInt()) {
 
@@ -44,7 +44,7 @@ public class Main {
                         DatosPrimitivos.conceptoDatosPrimitivos();
                         SubMenu.subMenu();
 
-                        System.out.print("Digite su opción: ");
+                        Funciones.funcionDigiteSuOpcion();
 
 
                         while (!menuscanner.hasNextInt()) {
@@ -131,7 +131,7 @@ public class Main {
 
                         SubMenu.subMenuOperadores();
 
-                        System.out.print("Digite su opción: ");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -190,7 +190,7 @@ public class Main {
                         Condicionales.conceptoIfElse();
 
                         SubMenu.subMenuIf();
-                        System.out.print("Digite su opción: ");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -283,7 +283,7 @@ public class Main {
 
                         SubMenu.subMenuSwitc();
 
-                        System.out.print("Digite su opción: ");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -378,7 +378,7 @@ public class Main {
 
                         SubMenu.subMenuTernarias();
 
-                        System.out.print("Ingrese una sub opcion");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -436,7 +436,7 @@ public class Main {
 
                         SubMenu.subMenuDoWhile();
 
-                        System.out.print("Ingrese una sub opcion");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -500,7 +500,7 @@ public class Main {
 
                         SubMenu.subMenuWhile();
 
-                        System.out.print("Ingrese una sub opcion: ");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
@@ -559,7 +559,7 @@ public class Main {
 
                         SubMenu.subMenuFor();
 
-                        System.out.print("Ingrese una sub opcion: ");
+                        Funciones.funcionDigiteSuOpcion();
 
                         while (!menuscanner.hasNextInt()) {
                             Funciones.funcionOpcionNoValida();
