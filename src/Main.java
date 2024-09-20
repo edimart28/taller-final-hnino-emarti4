@@ -596,7 +596,6 @@ public class Main {
 
                                 }
                                 Funciones.funcionScannerEnter(menuscanner);
-
                                 break;
 
                             case 3:
@@ -610,7 +609,6 @@ public class Main {
                 default:
                     System.out.println("Opcion no valida, inicie nuevamente");
                     break;
-
             }
 
             System.out.print("Presione enter para continuar...");
