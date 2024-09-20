@@ -14,7 +14,12 @@ public class Funciones {
     public static void funcionSalir() {
         System.out.println("\n!Gracias¡");
         System.exit(0);
+    }
 
+    public static void funcionScannerEnter(Scanner scanner) {
+        System.out.print("          Ingrese Enter para volver al menu anterior                     ");
+        scanner.nextLine();
+        scanner.nextLine();
 
     }
 

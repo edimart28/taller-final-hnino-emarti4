@@ -21,6 +21,7 @@ public class Main {
             Menu.menuPrincipal();
 
             System.out.print("Digite su opción: ");
+
             while (!menuscanner.hasNextInt()) {
 
                 Funciones.funcionOpcionNoValida();
@@ -59,71 +60,45 @@ public class Main {
                                 break;
 
                             case 1:
-
                                 DatosPrimitivos.conceptosByte();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
 
                                 DatosPrimitivos.conceptosShort();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 3:
                                 DatosPrimitivos.conceptosInt();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 4:
 
                                 DatosPrimitivos.conceptoLong();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 5:
                                 DatosPrimitivos.conceptoFloat();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 6:
-
                                 DatosPrimitivos.conceptoDouble();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 7:
                                 DatosPrimitivos.conceptoChair();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 8:
                                 DatosPrimitivos.conceptoBoolean();
-
-                                System.out.print("          Ingrese Enter para volver al menu anterior                      ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 9:
@@ -135,9 +110,7 @@ public class Main {
                                 System.out.println("Número no válido, por favor verifique.");
                                 //System.exit(0); //Opcion para que finalice al ingresar numero no valido.
                                 break;
-
                         }
-
                     }
                     break;
 
@@ -174,38 +147,27 @@ public class Main {
 
                             case 1:
                                 TipoOperadores.conceptoAritmeticos();
-
-                                System.out.print("                Ingrese Enter para volver al menu anterior                       ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
                                 TipoOperadores.conceptoRelacionales();
-                                System.out.print("                Ingrese Enter para volver al menu anterior                       ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 3:
                                 TipoOperadores.conceptoLogicos();
-                                System.out.print("                Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 4:
                                 TipoOperadores.conceptoAsignacion();
-                                System.out.println("                Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 5:
                                 TipoOperadores.conceptoIncremento();
-                                System.out.print("                Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 6:
@@ -245,26 +207,17 @@ public class Main {
 
                             case 1:
                                 Condicionales.conceptoIf();
-
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
                                 Condicionales.conceptoElseIf();
-
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 3:
                                 Condicionales.conceptoElse();
-
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 4:
@@ -304,10 +257,7 @@ public class Main {
                                     System.out.println("      * Vejez");
                                 System.out.println("");
 
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
-
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
 
@@ -350,10 +300,7 @@ public class Main {
 
                             case 1:
                                 Condicionales.conceptoSwitc();
-
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                   ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
@@ -376,52 +323,37 @@ public class Main {
                                     case 2:
                                         System.out.println("    * Su calificacion es F");
                                         System.out.println("");
-                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                        menuscanner.nextLine();
-                                        menuscanner.nextLine();
+                                        Funciones.funcionScannerEnter(menuscanner);
                                         break;
                                     case 3:
                                     case 4:
                                         System.out.println("    * Su calificacion es D");
                                         System.out.println("");
-                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                        menuscanner.nextLine();
-                                        menuscanner.nextLine();
+                                        Funciones.funcionScannerEnter(menuscanner);
                                         break;
                                     case 5:
                                     case 6:
                                         System.out.println("    * Su calificacion es C");
                                         System.out.println("");
-                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                        menuscanner.nextLine();
-                                        menuscanner.nextLine();
+                                        Funciones.funcionScannerEnter(menuscanner);
                                         break;
                                     case 7:
                                     case 8:
                                         System.out.println("    * Su calificacion es B");
                                         System.out.println("");
-                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                        menuscanner.nextLine();
-                                        menuscanner.nextLine();
+                                        Funciones.funcionScannerEnter(menuscanner);
                                         break;
                                     case 9:
                                     case 10:
                                         System.out.println("    * Su calificacion es A");
                                         System.out.println("");
-                                        System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                        menuscanner.nextLine();
-                                        menuscanner.nextLine();
+                                        Funciones.funcionScannerEnter(menuscanner);
                                         break;
-
 
                                     default:
                                         System.out.println("Número no válido, por favor verifique.");
                                         System.out.println("");
-
-
                                         break;
-
-
                                 }
                                 break;
 
@@ -459,10 +391,7 @@ public class Main {
                                 break;
                             case 1:
                                 Condicionales.conceptoTernaria();
-
-                                System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
@@ -484,11 +413,8 @@ public class Main {
 
                                 int mayor = (valor1 > valor2) ? valor1 : valor2;
                                 System.out.println("El mayor es: " + mayor);
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
-
 
                             case 3:
                                 System.out.println("Volviendo al menú principal...");
@@ -525,10 +451,7 @@ public class Main {
                             case 1:
 
                                 Ciclos.conceptoDoWhile();
-
-                                System.out.print("    Ingrese Enter para volver al menu anterior                                 ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
                             case 2:
@@ -553,9 +476,7 @@ public class Main {
 
                                 System.out.println("La suma total es: " + suma);
                                 System.out.println("");
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
 
@@ -593,10 +514,7 @@ public class Main {
                             case 1:
 
                                 Ciclos.conceptoWhile();
-
-                                System.out.print("        Ingrese Enter para volver al menu anterior                                 ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
 
@@ -655,10 +573,7 @@ public class Main {
                             case 1:
 
                                 Ciclos.conceptoFor();
-
-                                System.out.print("      Ingrese Enter para volver al menu anterior                               ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
                                 break;
 
 
@@ -680,9 +595,8 @@ public class Main {
                                     System.out.println("");
 
                                 }
-                                System.out.print("                  Ingrese Enter para volver al menu anterior                     ");
-                                menuscanner.nextLine();
-                                menuscanner.nextLine();
+                                Funciones.funcionScannerEnter(menuscanner);
+
                                 break;
 
                             case 3:
