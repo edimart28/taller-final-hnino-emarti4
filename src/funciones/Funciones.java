@@ -16,8 +16,9 @@ public class Funciones {
         System.exit(0);
     }
 
-    public static void funcionScannerEnter(Scanner scanner) {
-        System.out.print("          Ingrese Enter para volver al menu anterior                     ");
+
+    public static void funcionScannerEnter(Scanner scanner, String mensaje) {
+        System.out.print(mensaje);
         scanner.nextLine();
         scanner.nextLine();
     }
