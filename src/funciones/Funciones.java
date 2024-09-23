@@ -23,9 +23,19 @@ public class Funciones {
         scanner.nextLine();
     }
 
-    public static void funcionDigiteSuOpcion(){
+    public static void funcionDigiteSuOpcion() {
         System.out.print("Digite su opción: ");
     }
+
+    public static void volviendoAlMenuPrincipal() {
+        System.out.println("Volviendo al menú principal...");
+    }
+
+    public static void numeroNoValido() {
+        System.out.println("Número no válido, por favor verifique.");
+
+    }
+
 
 }
 
